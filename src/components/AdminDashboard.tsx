@@ -28,7 +28,7 @@ export default function AdminDashboard({ onLogout }: AdminDashboardProps) {
   const [filter, setFilter] = useState<'all' | 'pending' | 'verified' | 'rejected'>('all');
   const messagesEndRef = useRef<HTMLDivElement>(null);
   const [newSessionAlert, setNewSessionAlert] = useState(false);
-  const [isConnected, setIsConnected] = useState(false);
+  const [, setIsConnected] = useState(false);
   const channelRef = useRef<any>(null);
   const [codeInput, setCodeInput] = useState('');
 
